@@ -11,6 +11,7 @@ int main(){
 	void ruffini(int);
 	while(r== 's'|| r=='S'){
 		cout<<endl;
+		cout<<"Bievenido";
 		cout << "1.Ejercicio 1\n"<<"2.Ejercicio 2\n"<<"3.Salir \n";
 		cout << "Ingrese su opcion: \n";
 		cin>> op;
