@@ -1,8 +1,6 @@
-Point:	main.o triangulo.o
-	g++ main.o triangulo.o -o ejecutable
-
-main.o:	main.cpp TrianguloPascal.h
-	g++ -c main.cpp main.o
-
-triangulo.o:	TrianguloPascal.cpp TrianguloPascal.h
-	g++ -c TrianguloPascal.cpp triangulo.o
+Point:	mipuntito.o mimensito.o
+		g++ mipuntito.o mimensito.o -o point
+mimensito.o:	main.cpp TrianguloPascal.h
+		g++ -c main.cpp -o mimensito.o
+mipuntito.o:	TrianguloPascal.cpp TrianguloPascal.h
+		g++ -c TrianguloPascal.cpp -o mipuntito.o

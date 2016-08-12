@@ -1,9 +1,8 @@
 class TrianguloPascal{
-	public:
 		int lineas;
-	private:
+	public:
 		TrianguloPascal(int);
 		~TrianguloPascal();
-		void imprimir();
+		void imprimir(void);
 };
 

@@ -28,8 +28,8 @@ int main(){
 				cout << "Ingrese el tamaño del triangulo: \n";
 				int num = 0;
 				cin >> num;
-				TrianguloPascal tr(num);
-				tr.imprimir();
+				TrianguloPascal x(num);
+				x.imprimir();
 				break;
 			}
 
