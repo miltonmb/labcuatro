@@ -30,6 +30,7 @@ int main(){
 				cin >> num;
 				TrianguloPascal x(num);
 				x.imprimir();
+				cout<<endl;
 				break;
 			}
 
