@@ -5,7 +5,6 @@ using namespace std;
 int main(){
 	char r = 's';
 	int op = 0;
-	int arreglo[];
 	int size = 0;
 	int numero = 0;
 	while(r== 's'|| r=='S'){
@@ -13,20 +12,24 @@ int main(){
 		cout << "Ingrese su opcion: \n";
 		cin>> op;
 		switch(op){
-			case 1:
-			cout<<"Ingrese el grado mas alto del polinomio: ";
-			cin >> size;
-			for(int i = size; i>=size;i--){
-				cout <<"Ingrese el polinomio de x^"<<i<<":";
-				cin >> numero;
-				arreglo[i] = numero;
-			}
+			case 1:{
+				cout<<"Ingrese el grado mas alto del polinomio: ";
+				cin >> size;
+				cout<<endl;
+				int arreglo[size];
+				for(int i = size; i>=0;i--){
+					cout <<"Ingrese el polinomio de x^"<<i<<":\n";
+					cin >> arreglo[i];
+				}
 			
-			break;
-			case 2:
-			break;
-			default:
-			break;
+				break;
+			}
+			case 2:{
+				break;
+			}
+
+			default:{
+			}
 		}
 	}
 }
