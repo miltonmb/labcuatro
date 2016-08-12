@@ -9,6 +9,7 @@ int main(){
 	int numero = 0;
 	void ruffini(int);
 	while(r== 's'|| r=='S'){
+		cout<<endl;
 		cout << "1.Ejercicio 1\n"<<"2.Ejercicio 2\n"<<"3.Salir \n";
 		cout << "Ingrese su opcion: \n";
 		cin>> op;
@@ -68,4 +69,26 @@ void ruffini(int x){
 			cout << arreglo[i]<<"\t";
 		}
 	}
+	int y[x];
+	for (int i = x;i>=0;i--){
+		y[i] = 0;
+	}
+	for(int i = x; i>=0;i--){
+		if(i == x){
+			cout<<y[i]<<"\t";
+		i--;
+		}
+		if(i==0){
+		cout<<a*arreglo_dos[i+1]<<"|";
+		break;
+		}
+		cout << a*arreglo_dos[i+1]<<"\t";
+	}
+	cout << endl;
+	cout<<"----------------------------------"<<endl;
+	for(int i= x;i>=0;i--){
+		cout<<arreglo_dos[i]<<"\t";
+	}
+	cout <<endl;
+
 }
