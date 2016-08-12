@@ -51,8 +51,21 @@ void ruffini(int x){
 		}
 		arreglo_dos[i] = a*arreglo_dos[i+1]+arreglo[i];
 	}
+	cout<<"El cociente es:";
 	for(int i = x; i>=0;i--){
-		cout << arreglo_dos[i]<<endl;
+		if(i == 1){
+			cout<<arreglo_dos[i]<<endl;
+			break;
+		}else{
+			cout << arreglo_dos[i]<<"x^"<<i-1<<"+";
+		}
 	}
-
+	cout<<"El residuo es: "<<arreglo_dos[0]<<endl;
+	for(int i = x; i>=0;i--){
+		if(i==0){
+			cout<<arreglo[i]<<"|"<<a<<endl;
+		}else{
+			cout << arreglo[i]<<"\t";
+		}
+	}
 }
