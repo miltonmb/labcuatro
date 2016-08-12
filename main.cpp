@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include "TrianguloPascal.h"
 using namespace std;
 
 int main(){
@@ -24,6 +25,11 @@ int main(){
 			
 
 			case 2:{
+				cout << "Ingrese el tamaño del triangulo: \n";
+				int num = 0;
+				cin >> num;
+				TrianguloPascal tr(num);
+				tr.imprimir();
 				break;
 			}
 
@@ -31,6 +37,8 @@ int main(){
 				break;
 			}
 		}
+		cout <<"Desea continuar[s/n]:\n";
+		cin >> r;
 	}
 }
 
